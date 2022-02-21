@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Music Web Application</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="music.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Music Web Application</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+        </ul>
+        <!-- <form class="d-flex"> -->
+          <input id="form-input" class="form-control me-sm-2" type="text" placeholder="Artist Name">
+          <button class="btn btn-secondary my-2 my-sm-0" onclick="sendRequest();">Search</button>
+        <!-- </form>z -->
+      </div>
+    </div>
+  </nav>
+<br>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <div id="artist_block" class="row"></div>
+        <br>
+        <div id="artist_albums" class="row d-flex justify-content-between"></div>
+      </div>
+      <div id="artist_similar" class="col-lg-3">
+      </div>
+    </div>
+  </div>
+  <div id="output">&nbsp;</div>
+</body>
+
+</html>
